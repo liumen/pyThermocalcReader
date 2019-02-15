@@ -8,16 +8,16 @@
 # 3. 'function' and 'main function'
 # 4. How to write functions in Python
 
-# Carson Kinney and Qihang Wu
-# Last modified: 15 Feb 2019 09:33:24 AM #
-
-# modules to
 import codecs
 import re # regex operations
 
 
 # GLOBAL CONSTS
+# separtor between each main block
 MAINBLOCKSEPARATOR = '-----'
+# minimum rows in a main block
+# if main block size is smaller than this number,
+# the block will be ignored
 MAINBLOCKMINLENGTH = 17
 
 ############ FUNCTIONS #################
@@ -70,7 +70,6 @@ def crunchPTBlock(mainBlock):
 
 ########## MAIN FUNCTION ############
 if __name__ ==  '__main__':
-    # separtor between each main block
 
     # list that contains nonempty lines of main block
     mainBlock = []
@@ -114,7 +113,3 @@ if __name__ ==  '__main__':
         #   => PT block
         #   => fsp(L) entry
         print(alldata[4]['PT']['fsp_L'])
-
-
-
-
